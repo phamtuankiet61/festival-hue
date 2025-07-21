@@ -1,0 +1,29 @@
+:root {
+    --text-primary-color: #2F184F;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+
+.container {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: #2F184F;
+}
+
+.header {
+    height: 60px;
+    background-color: red;
+}
