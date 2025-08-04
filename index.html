@@ -3,20 +3,601 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival Huế 2025</title>
+    <title>Festival Huế 2025 - CodeAndBug</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
         <!-- Header -->
-        <header class="header container">
-            <div class="box">hello world</div>
+        <header id="header">
+            <div class="header-wrap container">
+                <div class="logo">
+                    <a href="" class="logo-link">
+                        <img src="./images/logo.png" alt="logo-festival">
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="#event" class="navbar-item-link">Tin tức - Sự kiện</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#traditional-village" class="navbar-item-link">Làng nghề truyền thống</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#cuisine" class="navbar-item-link">Ẩm thực</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#art" class="navbar-item-link">Nghệ thuật Huế</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!-- Banner -->
-         <div class="banner">
-            
-         </div>
+        <div id="banner">
+            <div class="banner-wrap container">
+                <div class="banner-text">
+                    <h1 class="banner-text-heading">Festival Huế 2025</h1>
+                    <h2 class="banner-text-title">Hành trình di sản và sáng tạo</h2>
+                    <p class="banner-text-des">“Khám phá lễ hội đặc sắc, không gian nghệ thuật và di sản văn hóa Huế”</p>
+                    <a href="#introduction" class="banner-btn-discovery">
+                        Khám phá ngay
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="banner-map">
+                    <span class="banner-map-icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <span class="banner-map-address">Kinh thanh, Dai Noi Hue</span>
+                </div>
+            </div>
+        </div>
+        <!-- Introduction -->
+        <div id="introduction">
+            <div class="introduction-wrap container">
+                <img class="introduction-image" src="./images/mask_group.png" alt="overview-image">
+                <div class="introduction-content">
+                    <h2 class="introduction-title">GIỚI THIỆU</h2>
+                    <p class="introduction-des">
+                        Festival Huế 2025 là chuỗi sự kiện văn hóa – du lịch đặc sắc diễn ra suốt cả năm, nằm trong khuôn khổ Năm Du lịch quốc gia với chủ đề “Huế – Kinh đô xưa, Vận hội mới”. Thông qua hàng trăm hoạt động lễ hội bốn mùa, chương trình tôn vinh di sản và nghệ thuật đương đại, Festival góp phần khẳng định Huế là “Kinh đô lễ hội” của Việt Nam, kết nối truyền thống và hội nhập quốc tế.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Traditional-village -->
+        <div id="traditional-village">
+            <div class="traditional-village-wrap container">
+                <h2 class="traditional-village__title">LÀNG NGHỀ TRUYỀN THỐNG HUẾ</h2>
+                <div class="traditional-village__line"></div>
+                <p class="traditional-village__description">"Tinh hoa gìn giữ qua bao thế hệ"</p>
+                <div class="traditional-village-slider">
+                    <div class="traditional-village-slider-list">
+                        <div class="traditional-village-slider-item">
+                            <div class="traditional-village-slider-item-image">
+                                <img src="./images/image_slider_non_la.png" alt="">
+                            </div>
+                            <div class="overlay-content d-none">
+                                <h3 class="traditional-village-name">Làng nghề nón lá</h3>
+                                <p class="traditional-village-des">“Nơi những bàn tay khéo léo tạo nên chiếc nón thanh thoát, lưu giữ hồn xưa và nét duyên Huế.”</p>
+                                <p class="traditional-village-quote">
+                                    <i class="fa-solid fa-quote-left quo-left"></i>
+                                    Một nơi để chạm vào truyền thống, để lắng nghe sự tinh tế trong từng sợi chỉ.
+                                    <i class="fa-solid fa-quote-right quo-right"></i>
+                                </p>
+                            </div>
+                            <button class="pull-up d-none"><i class="fa-solid fa-angles-up"></i></button>
+                            <button class="pull-down d-none"><i class="fa-solid fa-angles-down"></i></button>
+                        </div>
+                        <div class="traditional-village-slider-item active">
+                            <div class="traditional-village-slider-item-image">
+                                <img src="./images/image_slider_lang_huong.png" alt="">
+                            </div>
+                            <div class="overlay-content d-none">
+                                <h3 class="traditional-village-name">Làng hương Thủy Xuân</h3>
+                                <p class="traditional-village-des">“Làng nghề hơn 700 năm tuổi nổi tiếng với những bó hương rực rỡ, lưu giữ hồn cốt văn hóa cố đô Huế.”</p>
+                                <p class="traditional-village-quote">
+                                    <i class="fa-solid fa-quote-left quo-left"></i>
+                                    Hương thơm dịu nhẹ lan tỏa khắp làng, vừa thư giãn vừa thấy gần gũi văn hóa Huế.
+                                    <i class="fa-solid fa-quote-right quo-right"></i>
+                                </p>
+                            </div>
+                            <button class="pull-up d-none"><i class="fa-solid fa-angles-up"></i></button>
+                            <button class="pull-down d-none"><i class="fa-solid fa-angles-down"></i></button>
+                        </div>
+                        <div class="traditional-village-slider-item">
+                            <div class="traditional-village-slider-item-image">
+                                <img src="./images/image_slider_hoa_giay.png" alt="">
+                            </div>
+                            <div class="overlay-content d-none">
+                                <h3 class="traditional-village-name">Làng hoa giấy Thanh Tiên</h3>
+                                <p class="traditional-village-des">“Hơn 300 năm gìn giữ, làng hoa giấy Thanh Tiên là sắc màu rực rỡ của văn hóa Huế.”</p>
+                                <p class="traditional-village-quote">
+                                    <i class="fa-solid fa-quote-left quo-left"></i>
+                                    Những cánh hoa không héo úa – như tình cảm người Huế: bền bỉ và nhẹ nhàng.
+                                    <i class="fa-solid fa-quote-right quo-right"></i>
+                                </p>
+                            </div>
+                            <button class="pull-up d-none"><i class="fa-solid fa-angles-up"></i></button>
+                            <button class="pull-down d-none"><i class="fa-solid fa-angles-down"></i></button>
+                        </div>
+                        <div class="traditional-village-slider-item">
+                            <div class="traditional-village-slider-item-image">
+                                <img src="./images/image_slider_phuoc_tich.png" alt="">
+                            </div>
+                            <div class="overlay-content d-none">
+                                <h3 class="traditional-village-name">Làng gốm Phước Tích</h3>
+                                <p class="traditional-village-des">“Ngôi làng hơn 500 năm tuổi, nổi tiếng với gốm mộc mạc, bền đẹp và mang hồn xứ Huế.”</p>
+                                <p class="traditional-village-quote">
+                                    <i class="fa-solid fa-quote-left quo-left"></i>
+                                    Không chỉ là gốm, đó là ký ức, là văn hóa sống của một làng quê cổ kính.
+                                    <i class="fa-solid fa-quote-right quo-right"></i>
+                                </p>
+                            </div>
+                            <button class="pull-up d-none"><i class="fa-solid fa-angles-up"></i></button>
+                            <button class="pull-down d-none"><i class="fa-solid fa-angles-down"></i></button>
+                        </div>
+                        <div class="traditional-village-slider-item">
+                            <div class="traditional-village-slider-item-image">
+                                <img src="./images/image_slider_duc_dong.png" alt="">
+                            </div>
+                            <div class="overlay-content d-none">
+                                <h3 class="traditional-village-name">Làng nghề đúc đồng</h3>
+                                <p class="traditional-village-des">“Từ đôi tay nghệ nhân, đồng trở thành biểu tượng văn hóa và tâm linh xứ Huế.”</p>
+                                <p class="traditional-village-quote">
+                                    <i class="fa-solid fa-quote-left quo-left"></i>
+                                    Từng tiếng đập khuôn như vang vọng thời vàng son của triều Nguyễn.
+                                    <i class="fa-solid fa-quote-right quo-right"></i>
+                                </p>
+                            </div>
+                            <button class="pull-up d-none"><i class="fa-solid fa-angles-up"></i></button>
+                            <button class="pull-down d-none"><i class="fa-solid fa-angles-down"></i></button>
+                        </div>
+                        <div class="traditional-village-slider-item">
+                            <div class="traditional-village-slider-item-image">
+                                <img src="./images/image_slider_lang_sinh.png" alt="">
+                            </div>
+                            <div class="overlay-content d-none">
+                                <h3 class="traditional-village-name">Nghề tranh làng Sình</h3>
+                                <p class="traditional-village-des">“Từ màu sắc thô mộc đến nét vẽ thủ công, làng Sình mang đến nghệ thuật rất riêng của xứ Huế.”</p>
+                                <p class="traditional-village-quote">
+                                    <i class="fa-solid fa-quote-left quo-left"></i>
+                                    Không chỉ là tranh, đó là một phần ký ức văn hóa được lưu giữ suốt nhiều đời.
+                                    <i class="fa-solid fa-quote-right quo-right"></i>
+                                </p>
+                            </div>
+                            <button class="pull-up d-none"><i class="fa-solid fa-angles-up"></i></button>
+                            <button class="pull-down d-none"><i class="fa-solid fa-angles-down"></i></button>
+                        </div>
+                    </div>
+                    <button class="btn-prev"><i class="fa-solid fa-angle-left"></i></button>
+                    <button class="btn-next"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Cuisine -->
+        <div id="cuisine">
+            <div class="cuisine-wrap container">
+                <div class="cuisine-intro">
+                    <div class="cuisine-intro-heading">
+                        <h3 class="cuisine-intro-explore">Khám phá</h3>
+                        <h2 class="cuisine-intro-title">ẨM THỰC CỐ ĐÔ HUẾ</h2>
+                        <span class="cuisine-intro-line"></span>
+                    </div>
+                    <p class="cuisine-intro-des">“Ẩm thực Huế là kết tinh của văn hóa cung đình và dân gian, mang đậm dấu ấn nghệ thuật từ cách chế biến đến trình bày. ”</p>
+                </div>
+                <div class="cuisine-card-lists">
+                    <div class="cuisine-card-item">
+                        <div class="cuisine-card-item-image">
+                            <img src="./images/image_bun_bo_card.png" alt="bún bò">
+                        </div>
+                        <div class="cuisine-card-item-info">
+                            <h4 class="cuisine-card-item-name">Bún bò Huế</h4>
+                            <p class="cuisine-card-item-des">Món ăn mang linh hồn ẩm thực Cố đô. Hương vị đậm đà, cay nồng đặc trưng xứ Huế.</p>
+                            <button class="cuisine-card-item-btn"><span>Trải nghiệm</span></button>
+                        </div>
+                    </div>
+                    <div class="cuisine-card-item">
+                        <div class="cuisine-card-item-image">
+                            <img src="./images/image_com_hen_card.png" alt="cơm hến">
+                        </div>
+                        <div class="cuisine-card-item-info">
+                            <h4 class="cuisine-card-item-name">Cơm hến</h4>
+                            <p class="cuisine-card-item-des">Cơm hến là bản giao hưởng của vị cay, mặn, thơm, một trải nghiệm ẩm thực độc đáo chỉ có ở Huế.</p>
+                            <button class="cuisine-card-item-btn"><span>Trải nghiệm</span></button>
+                        </div>
+                    </div>
+                    <div class="cuisine-card-item">
+                        <div class="cuisine-card-item-image">
+                            <img src="./images/image_banh_beo_card.png" alt="bánh bèo">
+                        </div>
+                        <div class="cuisine-card-item-info">
+                            <h4 class="cuisine-card-item-name">Bánh bèo</h4>
+                            <p class="cuisine-card-item-des">Mỗi chén bánh là một nốt nhạc dịu dàng trong bản giao hưởng ẩm thực Cố đô.</p>
+                            <button class="cuisine-card-item-btn"><span>Trải nghiệm</span></button>
+                        </div>
+                    </div>
+                    <div class="cuisine-card-item">
+                        <div class="cuisine-card-item-image">
+                            <img src="./images/image_banh_canh_nam_pho_card.png" alt="bánh canh Nam Phổ">
+                        </div>
+                        <div class="cuisine-card-item-info">
+                            <h4 class="cuisine-card-item-name">Bánh canh Nam Phổ</h4>
+                            <p class="cuisine-card-item-des">Một món ăn mộc mạc, mang theo cái tình và cái vị của làng Nam Phổ.</p>
+                            <button class="cuisine-card-item-btn"><span>Trải nghiệm</span></button>
+                        </div>
+                    </div>
+                    <div class="cuisine-card-item">
+                        <div class="cuisine-card-item-image">
+                            <img src="./images/image_che_hue_card.png" alt="chè huế">
+                        </div>
+                        <div class="cuisine-card-item-info">
+                            <h4 class="cuisine-card-item-name">Chè Huế</h4>
+                            <p class="cuisine-card-item-des">Chè Huế - ngọt thanh, sự hòa quyện duyên dáng của màu sắc, hương thơm và vị ngọt.</p>
+                            <button class="cuisine-card-item-btn"><span>Trải nghiệm</span></button>
+                        </div>
+                    </div>
+                    <div class="cuisine-card-item">
+                        <div class="cuisine-card-item-image">
+                            <img src="./images/image_banh_loc_card.png" alt="bánh lọc">
+                        </div>
+                        <div class="cuisine-card-item-info">
+                            <h4 class="cuisine-card-item-name">Bánh lọc</h4>
+                            <p class="cuisine-card-item-des">Món bánh trong veo, dẻo dai, gói trọn vị Huế mộc mạc mà sâu lắng.</p>
+                            <button class="cuisine-card-item-btn"><span>Trải nghiệm</span></button>
+                        </div>
+                    </div>
+                    <div class="cuisine-card-item">
+                        <div class="cuisine-card-item-image">
+                            <img src="./images/image_nem_lui_card.png" alt="nem lụi huế">
+                        </div>
+                        <div class="cuisine-card-item-info">
+                            <h4 class="cuisine-card-item-name">Nem lụi Huế</h4>
+                            <p class="cuisine-card-item-des">Thơm lừng trên bếp than hồng, nem lụi là hồn của ẩm thực đường phố Huế.</p>
+                            <button class="cuisine-card-item-btn"><span>Trải nghiệm</span></button>
+                        </div>
+                    </div>
+                    <div class="cuisine-card-item">
+                        <div class="cuisine-card-item-image">
+                            <img src="./images/image_banh_nam_card.png" alt="bánh nậm">
+                        </div>
+                        <div class="cuisine-card-item-info">
+                            <h4 class="cuisine-card-item-name">Bánh nậm</h4>
+                            <p class="cuisine-card-item-des">Gói trọn hương vị quê trong tàu lá, bánh nậm là nét duyên thầm của ẩm thực Huế.</p>
+                            <button class="cuisine-card-item-btn"><span>Trải nghiệm</span></button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Art -->
+        <div id="art">
+            <div class="art-wrap container">
+                <div class="art-intro-heading">
+                    <h3 class="art-intro-explore">Trải nghiệm</h3>
+                    <h2 class="art-intro-title">NGHỆ THUẬT XỨ HUẾ</h2>
+                    <p class="art-intro-des">Từ nhã nhạc cung đình Huế đến ca Huế trên sông Hương, nghệ thuật xứ Huế là linh hồn của một kinh đô cổ kính và tinh tế.</p>
+                </div>
+                <div class="art-card-list">
+                    <div class="art-card-item">
+                        <div class="art-card-image">
+                            <img src="./images/image_nha_nhac_cung_dinh_card.png" alt="nhã nhạc cung đình">
+                        </div>
+                        <h4 class="art-card-name">Nhã nhạc cung đình Huế</h4>
+                        <p class="art-card-des">Di sản phi vật thể đại diện nhân loại, lưu giữ thanh âm cung đình xưa.</p>
+                        <div class="art-card-location">
+                            <i class="fa-solid fa-location-dot art-card-location-icon"></i>
+                            <span>Duyệt Thị Đường - Đại Nội Huế</span>
+                        </div>
+                        <button class="art-card-btn">xem chi tiết</button>
+                    </div>
+                    <div class="art-card-item">
+                        <div class="art-card-image">
+                            <img src="./images/image_ca_hue_tren_song_huong_card.png" alt="ca Huế trên sông Hương">
+                        </div>
+                        <h4 class="art-card-name">Ca Huế trên sông Hương</h4>
+                        <p class="art-card-des">Một lần nghe Ca Huế giữa dòng Hương Giang, cả đời nhớ mãi hồn xưa xứ Huế.</p>
+                        <div class="art-card-location">
+                            <i class="fa-solid fa-location-dot art-card-location-icon"></i>
+                            <span>Bến tòa khâm - cầu Tràng Tiền</span>
+                        </div>
+                        <button class="art-card-btn">xem chi tiết</button>
+                    </div>
+                    <div class="art-card-item">
+                        <div class="art-card-image">
+                            <img src="./images/image_mua_cung_dinh_card.png" alt="múa cung đình">
+                        </div>
+                        <h4 class="art-card-name">Múa cung đình</h4>
+                        <p class="art-card-des">Múa lục cúng hoa đăng, múa bát dật… từng được biểu diễn trong các nghi lễ long trọng của triều Nguyễn.</p>
+                        <div class="art-card-location">
+                            <i class="fa-solid fa-location-dot art-card-location-icon"></i>
+                            <span>Điện Thái Hòa – Đại Nội Huế</span>
+                        </div>
+                        <button class="art-card-btn">xem chi tiết</button>
+                    </div>
+                </div>
+                <div class="art-calendar">
+                    <h3 class="art-calendar-title">Lịch biểu diễn nghệ thuật trực tiếp</h3>
+                    <p class="art-calendar-des">Chọn thời gian phù hợp để không bỏ lỡ những màn trình diễn đặc sắc</p>
+                    <table class="art-calender-table">
+                        <colgroup>
+                            <col style="width: auto">    
+                            <col style="width: 490px">   
+                            <col style="width: 170px">   
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Chương trình</th>
+                                <th>Thời gian - địa điểm</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nhã nhạc cung đình Huế</td>
+                                <td>19:00 – 20:00, thứ Bảy hàng tuần - Đại nội</td>
+                                <td>Đặt vé</td>
+                            </tr>
+                            <tr>
+                                <td>Ca Huế trên sông Hương</td>
+                                <td>20:00 – 21:00, hằng ngày - bến Tòa Khâm</td>
+                                <td>Đặt vé</td>
+                            </tr>
+                            <tr>
+                                <td>Múa cung đình</td>
+                                <td>16:00 – 16:45, thứ Sáu & Chủ nhật - Điện Thái Hòa</td>
+                                <td>Đặt vé</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="art-feedback">
+                    <div class="art-feedback-card">
+                        <img src="./images/feedback_avatar_victor_vu.png" alt="Victor Vũ" class="art-feedback-avatar">
+                        <div class="art-feedback-info">
+                            <p class="art-feedback-quote">“Huế mang lại cảm hứng hình ảnh tuyệt đẹp. Mọi không gian, chi tiết đều gợi nên chiều sâu văn hóa và nghệ thuật.”</p>
+                            <p class="art-feedback-name">_ Victor Vũ _</p>
+                            <p class="art-feedback-occupation">Đạo diễn phim điện ảnh Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="art-feedback-card">
+                        <img src="./images/feedback_avatar_tran_hieu.png" alt="Trần Hiếu" class="art-feedback-avatar">
+                        <div class="art-feedback-info">
+                            <p class="art-feedback-quote">“Nghệ thuật Huế mang dáng dấp hoàng cung, nhưng lại đi vào lòng người rất nhẹ nhàng – như một bài thơ không lời.”</p>
+                            <p class="art-feedback-name">_ Trần Hiếu _</p>
+                            <p class="art-feedback-occupation">Nghệ sĩ nhân dân</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Travel -->
+        <div id="travel-top">
+            <div class="travel-top-wrap container">
+                <h3 class="travel-top-heading">Top địa điểm</h3>
+                <h3 class="travel-top-title">KHI ĐẾN HUẾ DU LỊCH</h3>
+                <span class="travel-top-line"></span>
+                <div class="travel-top-gallery-grid-container">
+                    <div class="gallery-grid-item item1">
+                        <img src="./images/image_cau_trang_tien_grid.png" alt="cầu Tràng Tiền" class="gallery-grid-item-image">
+                        <div class="gallery-grid-item-info">
+                            <p class="gallery-grid-item-name">Cầu Tràng Tiền</p>
+                            <p class="gallery-grid-item-des">Biểu tượng xứ Huế</p>
+                        </div>
+                    </div>
+                    <div class="gallery-grid-item item2">
+                        <img src="./images/image_doi_vong_canh_grid.png" alt="Đồi Vọng Cảnh" class="gallery-grid-item-image">
+                        <div class="gallery-grid-item-info">
+                            <p class="gallery-grid-item-name">Đồi Vọng Cảnh</p>
+                            <p class="gallery-grid-item-des">Điểm hẹn của hoàng hôn</p>
+                        </div>
+                    </div>
+                    <div class="gallery-grid-item item3">
+                        <img src="./images/image_chua_thien_mu_grid.png" alt="Chùa Thiên Mụ" class="gallery-grid-item-image">
+                        <div class="gallery-grid-item-info">
+                            <p class="gallery-grid-item-name">Chùa Thiên Mụ</p>
+                            <p class="gallery-grid-item-des">Tháp cổ bên sông Hương</p>
+                        </div>
+                    </div>
+                    <div class="gallery-grid-item item4">
+                        <img src="./images/image_pha_tam_giang_grid.png" alt="Phá Tam Gian" class="gallery-grid-item-image">
+                        <div class="gallery-grid-item-info">
+                            <p class="gallery-grid-item-name">Phá Tam Giang</p>
+                            <p class="gallery-grid-item-des">Bức tranh thủy mặc Huế</p>
+                        </div>
+                    </div>
+                    <div class="gallery-grid-item item5">
+                        <img src="./images/image_lang_tu_duc_grid.png" alt="Lăng Tự Đức" class="gallery-grid-item-image">
+                        <div class="gallery-grid-item-info">
+                            <p class="gallery-grid-item-name">Lăng Tự Đức</p>
+                            <p class="gallery-grid-item-des">Kiến trúc hòa cùng non nước</p>
+                        </div>
+                    </div>
+                    <div class="gallery-grid-item item6">
+                        <img src="./images/image_rung_ru_cha_grid.png" alt="Rừng Rú Chá" class="gallery-grid-item-image">
+                        <div class="gallery-grid-item-info">
+                            <p class="gallery-grid-item-name">Rừng Rú Chá</p>
+                            <p class="gallery-grid-item-des">Thiên đường xanh tĩnh lặng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Event -->
+        <div id="event">
+            <div class="event-wrap container">
+                <h2 class="event-heading-title">TIN TỨC - SỰ KIỆN</h2>
+                <div class="event-filters">
+                    <button class="event-filters-btn active">Tất cả</button>
+                    <button class="event-filters-btn">Lễ hội</button>
+                    <button class="event-filters-btn">Du lịch</button>
+                    <button class="event-filters-btn">Văn hóa</button>
+                </div>
+                <div class="event-card-lists">
+                    <div class="event-card-item">
+                        <div class="event-card-item-img">
+                            <img src="./images/image_event_khai_mac.png" alt="">
+                            <div class="event-card-item-overlay">
+                                <p class="event-card-item-text">Sự kiện đang diễn ra</p>
+                            </div>
+                        </div>
+                        <div class="event-card-item-info">
+                            <h4 class="event-card-item-title">Khai mạc Festival Huế 2025 – Sắc màu văn hóa cung đình</h4>
+                            <p class="event-card-item-date">25 Tháng 3, 2025 • Lễ hội</p>
+                            <p class="event-card-item-des">Hàng ngàn du khách đổ về trung tâm Cố đô Huế để tham dự đêm hội rực rỡ sắc màu truyền thống.</p>
+                            <button class="event-card-item-read-more-btn">Đọc tiếp</button>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="event-card-item">
+                        <div class="event-card-item-img">
+                            <img src="./images/image_event_trail.png" alt="">
+                            <div class="event-card-item-overlay">
+                                <p class="event-card-item-text">Sự kiện sắp diễn ra</p>
+                            </div>
+                        </div>
+                        <div class="event-card-item-info">
+                            <h4 class="event-card-item-title">Giải chạy khám phá Di sản Huế lần thứ I – Huế Heritage Trail</h4>
+                            <p class="event-card-item-date">2 Tháng 11, 2025 • Du lịch</p>
+                            <p class="event-card-item-des">Sự kiện nằm trong Tuần lễ Du lịch Chăm sóc Sức khỏe Huế – 2025, hưởng ứng Năm Du lịch Quốc gia.</p>
+                            <button class="event-card-item-read-more-btn">Đọc tiếp</button>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="event-card-item">
+                        <div class="event-card-item-img">
+                            <img src="./images/image_event_bun_bo.png" alt="">
+                            <div class="event-card-item-overlay">
+                                <p class="event-card-item-text">Sự kiện đã diễn ra</p>
+                            </div>
+                        </div>
+                        <div class="event-card-item-info">
+                            <h4 class="event-card-item-title">Thêm 2 Di sản Văn hóa phi vật thể được ghi danh</h4>
+                            <p class="event-card-item-date">9 Tháng 7, 2025 • Văn hóa</p>
+                            <p class="event-card-item-des">Sở Văn hóa và Thể thao TP. Huế cho biết, Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đã có quyết định đưa vào danh mục Di sản Văn ....</p>
+                            <button class="event-card-item-read-more-btn">Đọc tiếp</button>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-pagination">
+                    <button class="event-pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                    <button class="event-pagination-btn btn-number">1</button>
+                    <button class="event-pagination-btn btn-number active">2</button>
+                    <button class="event-pagination-btn btn-number">3</button>
+                    <button class="event-pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="footer-organization">
+                    <h4 class="footer-title">ĐƠN VỊ TỔ CHỨC</h4>
+                    <p class="footer-line-text"></p>
+                    <div class="footer-organizing-unit">
+                        <img src="./images/image_spit_avatar.png" alt="spit" class="footer-organizing-unit-img-spit">
+                        <div class="footer-organizing-unit-spit">
+                            <h4>TRƯỜNG ĐẠI HỌC KHOA HỌC</h4>
+                            <p>CLB HỖ TRỢ LẬP TRÌNH</p>
+                        </div>
+                    </div>
+                    <div class="footer-organizing-unit">
+                        <img src="./images/image_dhkh.png" alt="dhkh" class="footer-organizing-unit-img-dhkh">
+                        <div class="footer-organizing-unit-dhkh">
+                            <h3>Đại học khoa học Huế</h3>
+                            <a href="">Hue University Of Sciences</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <h4 class="footer-title">VỀ FESTIVAL</h4>
+                    <p class="footer-line-text"></p>
+                    <ul class="footer-about-lists">
+                        <li class="footer-about-item">
+                            <a href="" class="footer-about-link">Giới thiệu</a>
+                        </li>
+                        <li class="footer-about-item">
+                            <a href="" class="footer-about-link">Làng nghề truyền thống</a>
+                        </li>
+                        <li class="footer-about-item">
+                            <a href="" class="footer-about-link">Khám phá ẩm thực Huế</a>
+                        </li>
+                        <li class="footer-about-item">
+                            <a href="" class="footer-about-link">Nghệ thuật xứ Huế</a>
+                        </li>
+                        <li class="footer-about-item">
+                            <a href="" class="footer-about-link">Top địa điểm khi đến Huế</a>
+                        </li>
+                        <li class="footer-about-item">
+                            <a href="" class="footer-about-link">Tin tức - sự kiện</a>
+                        </li>
+                        <li class="footer-about-item">
+                            <a href="" class="footer-about-link">Hướng dẫn mua vé</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-title">THÔNG TIN LIÊN HỆ</h4>
+                    <p class="footer-line-text"></p>
+                    <div class="footer-contact-card footer-contact-card-location">
+                        <div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <p class="footer-contact-name">Tam Tòa, số 23 Tống Duy Tân, Phường Phú Xuân, Thành phố Huế</p>
+                    </div>
+                    <div class="footer-contact-card">
+                        <div class="footer-contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <p class="footer-contact-name">0234 3823338</p>
+                    </div>
+                    <div class="footer-contact-card">
+                        <div class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <p class="footer-contact-name">huefestival.official@gmail.com</p>
+                    </div>
+                    <div class="footer-contact-card">
+                        <div class="footer-contact-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <p class="footer-contact-name">Festival Huế</p>
+                    </div>
+                    <div class="footer-contact-card">
+                        <div class="footer-contact-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <p class="footer-contact-name">Giờ làm việc: 8:00 – 17:00 (T2 – T6)</p>
+                    </div>
+                </div>
+                <div class="footer-register">
+                    <h4 class="footer-title">ĐĂNG KÝ THÔNG TIN</h4>
+                    <p class="footer-line-text"></p>
+                    <p class="footer-register-des">Đăng ký để nhận lịch sự kiện, thông báo và ưu đãi sớm nhất từ Festival Huế.</p>
+                    <div class="footer-register-gallery">
+                        <img src="./images/footer_gallery_1.png" alt="1" class="footer-register-gallery-image">
+                        <img src="./images/footer_gallery_2.png" alt="1" class="footer-register-gallery-image">
+                        <img src="./images/footer_gallery_3.png" alt="1" class="footer-register-gallery-image">
+                        <img src="./images/footer_gallery_4.png" alt="1" class="footer-register-gallery-image">
+                        <img src="./images/footer_gallery_5.png" alt="1" class="footer-register-gallery-image">
+                        <img src="./images/footer_gallery_6.png" alt="1" class="footer-register-gallery-image">
+                        <img src="./images/footer_gallery_7.png" alt="1" class="footer-register-gallery-image">
+                        <img src="./images/footer_gallery_8.png" alt="1" class="footer-register-gallery-image">
+                    </div>
+                    <button class="footer-register-btn ">Đăng ký tham gia</button>
+                    <button class="footer-register-btn buy-ticket-btn">Mua vé ngay</button>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>©2025 Copyright By CodeAndBug</p>
+            </div>
+        </footer>
     </div>
+    <!-- Buy-ticket-form -->
+    <!-- <div class="buy-ticket">
+        <div class="buy-ticket-model">
+
+        </div>
+    </div> -->
+
+    <!-- <button class="btn-navigate-top-bottom">
+        <i class="fa-solid fa-angle-down"></i>
+    </button> -->
+
+    <script src="./index.js"></script>
 </body>
 </html>
