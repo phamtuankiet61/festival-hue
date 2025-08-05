@@ -23,6 +23,7 @@
   display: none;
 }
 
+/* Animation */
 @keyframes buyTicket {
   from {
     opacity: 0;
@@ -40,3 +41,16 @@
     transform: scale(1) translate(-50%, -50%);
   }
 }
+
+/* Mobile */
+@media (max-width: 767px) { 
+
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) { 
+
+
+}
+

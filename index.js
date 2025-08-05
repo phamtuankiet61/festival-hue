@@ -126,3 +126,18 @@ buyTicket.onclick = e => {
     }
 }
 
+// Xử lý button Back To Top
+const btnBackToTop = document.querySelector('.btn-back-to-top');
+
+window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btnBackToTop.classList.add("show");
+    } else {
+        btnBackToTop.classList.remove("show");
+    }
+});
+
+btnBackToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
