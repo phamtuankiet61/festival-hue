@@ -1258,6 +1258,7 @@ html {
     color: #DDDCDC;
     text-decoration: none;
     transition: all .2s ease;
+    cursor: pointer;
 }
 
 .footer-about-link:hover {
@@ -1358,6 +1359,10 @@ html {
     background-color: rgba(101, 144, 248, .45);
 }
 
+.footer-register-btn:hover {
+    opacity: .9;
+}
+
 .footer-register-btn + .footer-register-btn {
     margin-left: 6px;
 }
@@ -1390,9 +1395,9 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .4);
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgb(51, 51, 51, .5);
     z-index: 999;
+    animation: buyTicket 0.4s ease;
 }
 
 .buy-ticket-model {
@@ -1400,7 +1405,149 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 950px;
+    width: 840px;
     height: 500px;
     background-color: #fff;
+    display: flex;
+    overflow: hidden;
+    animation: buyTicketModel 0.4s ease;
 }
+
+.buy-ticket-banner {
+    background-image: url(../images/banner_form_buy_ticket.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 430px;
+    height: 100%;
+    text-align: center;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.buy-ticket-banner-title {
+    font-size: 3.4rem;
+    font-weight: 600;
+    letter-spacing: 0.34px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+.buy-ticket-banner-des {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.42px;
+    color: #fff;
+    line-height: 19px;
+}
+
+.buy-ticket-form {
+    font-family: 'Poppins', sans-serif;
+    flex-grow: 1;
+    padding: 40px 40px 0 40px;
+    max-width: 410px;
+}
+
+.buy-ticket-form-title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #756DD4;
+    margin-bottom: 30px;
+}
+
+#name, #email, #phone-number, #so-luong {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #E6E7EB;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #BB79C3;
+    caret-color: #BB79C3;
+    line-height: 40px;
+    padding: 0 13px;
+    border-radius: 6px;
+    margin-bottom: 13px;
+}
+
+.buy-ticket-form input::placeholder {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #A7A7A7;
+}
+
+.buy-ticket-form-row {
+    display: flex;
+}
+
+.buy-ticket-form-row-select {
+    font-family: 'Poppins', sans-serif;
+    flex-grow: 1;
+    width: 100%;
+    height: 40px;
+    background-color: #E6E7EB;
+    color: #A7A7A7;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 9px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.buy-ticket-form-row-select option {
+    color: #A7A7A7;
+}
+
+#so-luong {
+    width: 157px;
+    margin-left: 13px;
+}
+
+.buy-form-wrap-row {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+
+.buy-form-wrap-row label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #A7A7A7;
+    margin-left: 5px;
+    user-select: none;
+}
+
+.buy-form-wrap-row label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+.buy-ticket-form-submit-btn {
+    font-family: 'Poppins', sans-serif;
+    width: 230px;
+    height: 38px;
+    border: none;
+    background-color: #756DD4;
+    border-radius: 100px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+.buy-ticket-form-submit-btn:hover {
+    opacity: .9;
+}
+
+

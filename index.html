@@ -339,17 +339,17 @@
                             <tr>
                                 <td>Nhã nhạc cung đình Huế</td>
                                 <td>19:00 – 20:00, thứ Bảy hàng tuần - Đại nội</td>
-                                <td>Đặt vé</td>
+                                <td class="book-ticket-btn">Đặt vé</td>
                             </tr>
                             <tr>
                                 <td>Ca Huế trên sông Hương</td>
                                 <td>20:00 – 21:00, hằng ngày - bến Tòa Khâm</td>
-                                <td>Đặt vé</td>
+                                <td class="book-ticket-btn">Đặt vé</td>
                             </tr>
                             <tr>
                                 <td>Múa cung đình</td>
                                 <td>16:00 – 16:45, thứ Sáu & Chủ nhật - Điện Thái Hòa</td>
-                                <td>Đặt vé</td>
+                                <td class="book-ticket-btn">Đặt vé</td>
                             </tr>
                         </tbody>
                     </table>
@@ -518,25 +518,26 @@
                     <p class="footer-line-text"></p>
                     <ul class="footer-about-lists">
                         <li class="footer-about-item">
-                            <a href="" class="footer-about-link">Giới thiệu</a>
+                            <a href="#introduction" class="footer-about-link">Giới thiệu</a>
                         </li>
                         <li class="footer-about-item">
-                            <a href="" class="footer-about-link">Làng nghề truyền thống</a>
+                            <a href="#traditional-village" class="footer-about-link">Làng nghề truyền thống</a>
                         </li>
                         <li class="footer-about-item">
-                            <a href="" class="footer-about-link">Khám phá ẩm thực Huế</a>
+                            <a href="#cuisine" class="footer-about-link">Khám phá ẩm thực Huế</a>
                         </li>
                         <li class="footer-about-item">
-                            <a href="" class="footer-about-link">Nghệ thuật xứ Huế</a>
+                            <a href="#art" class="footer-about-link">Nghệ thuật xứ Huế</a>
                         </li>
                         <li class="footer-about-item">
-                            <a href="" class="footer-about-link">Top địa điểm khi đến Huế</a>
+                            <a href="#travel-top" class="footer-about-link">Top địa điểm khi đến Huế</a>
                         </li>
                         <li class="footer-about-item">
-                            <a href="" class="footer-about-link">Tin tức - sự kiện</a>
+                            <a href="#event" class="footer-about-link">Tin tức - sự kiện</a>
                         </li>
                         <li class="footer-about-item">
-                            <a href="" class="footer-about-link">Hướng dẫn mua vé</a>
+                            <!-- <a href="" class="footer-about-link">Hướng dẫn mua vé</a> -->
+                            <p class="footer-about-link footer-about-link-buy-ticket-btn">Hướng dẫn mua vé</p>
                         </li>
                     </ul>
                 </div>
@@ -588,11 +589,42 @@
         </footer>
     </div>
     <!-- Buy-ticket-form -->
-    <!-- <div class="buy-ticket">
+    <div class="buy-ticket d-none">
         <div class="buy-ticket-model">
-
+            <div class="buy-ticket-banner">
+                <h3 class="buy-ticket-banner-title">Welcome back!</h3>
+                <p class="buy-ticket-banner-des">Trải nghiệm Festival Huế </p>
+                <p class="buy-ticket-banner-des">trọn vẹn? Bắt đầu từ đăng ký! → </p>
+            </div>
+            <form action="" class="buy-ticket-form">
+                <h3 class="buy-ticket-form-title">Đăng ký thông tin</h3>
+                <input type="text" id="name" name="name" placeholder="Họ và tên" spellcheck="false" required>
+                <input type="email" id="email" name="email" placeholder="Email" spellcheck="false" required>
+                <input type="text" id="phone-number" name="phone-number" placeholder="Số điện thoại" spellcheck="false" required>
+                <div class="buy-ticket-form-row">
+                    <select class="buy-ticket-form-row-select">
+                        <option disabled selected>Chọn loại vé</option>
+                        <option>Vé thường</option>
+                        <option>Vé tuần</option>
+                        <option>Vé VIP</option>
+                    </select>
+                    <input type="number" id="so-luong" name="so-luong" placeholder="Số lượng" spellcheck="false" required>
+                </div>
+                <select class="buy-ticket-form-row-select">
+                    <option disabled selected>Tỉnh/Thành phố </option>
+                    <option>Thành phố Huế</option>
+                    <option>Thành phố Hồ Chí Minh</option>
+                    <option>Thành phố Hà Nội</option>
+                    <option>Thành phố Đã Nẵng</option>
+                </select>
+                <div class="buy-form-wrap-row">
+                    <input type="checkbox" id="check-accept" required>
+                    <label for="check-accept">Tôi đồng ý với Điều khoản & Chính sách</label>
+                </div>
+                <button class="buy-ticket-form-submit-btn">Mua vé ngay</button>
+            </form>
         </div>
-    </div> -->
+    </div>
 
     <!-- <button class="btn-navigate-top-bottom">
         <i class="fa-solid fa-angle-down"></i>

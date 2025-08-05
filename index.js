@@ -96,3 +96,33 @@ btnNumbers.forEach(btnNumber => {
         e.target.classList.add('active');
     }
 })
+
+// Xử lý ẩn hiện model form-buy-ticket
+const buyTicket = document.querySelector('.buy-ticket');
+const buyTicketModel = document.querySelector('.buy-ticket-model');
+const footerAboutLinkBuyTicketBtn = document.querySelector('.footer-about-link-buy-ticket-btn');
+const btnFooterRegisters = document.querySelectorAll('.footer-register-btn');
+const btnBookTickets = document.querySelectorAll('.book-ticket-btn');
+
+btnFooterRegisters.forEach(bnt => {
+    bnt.onclick = () => {
+        buyTicket.classList.remove('d-none');
+    }
+})
+
+btnBookTickets.forEach(bnt => {
+    bnt.onclick = () => {
+        buyTicket.classList.remove('d-none');
+    }
+})
+
+footerAboutLinkBuyTicketBtn.onclick = () => {
+    buyTicket.classList.remove('d-none');
+}
+
+buyTicket.onclick = e => {
+    if(!buyTicketModel.contains(e.target)) {
+        buyTicket.classList.add('d-none');
+    }
+}
+
