@@ -42,15 +42,586 @@
   }
 }
 
-/* Mobile */
-@media (max-width: 767px) { 
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(-145px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-
+@media (min-width: 1081px) and (max-width: 1250px) {
+  .btn-prev,
+  .btn-next {
+    display: none;
+  }
 }
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1023px) { 
+@media (min-width: 768px) and (max-width: 1080px) { 
+  .container {
+    width: 720px;
 
+  }
+
+  /* Header */
+  .header-wrap .logo {
+    width: 36px;
+    height: 36px;
+  }
+  .navbar-item-link {
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+
+  /* Banner */
+  .banner-text {
+    top: 320px;
+  }
+  .banner-text-heading {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  .banner-text-title {
+    font-size: 2.5rem;
+  }
+  .banner-text-des {
+    font-size: 1.8rem;
+  }
+  .banner-map {
+    font-size: 1.3rem;
+  }
+
+  /* Introduction */
+  .introduction-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .introduction-image {
+    width: 405px;
+    height: 350px;
+    margin: 20px auto 30px;
+  }
+
+  .introduction-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .introduction-title {
+    font-size: 3.4rem;
+  }
+
+  .introduction-des {
+    font-size: 2.3rem;
+  }
+
+  /* Traditional-village */
+  .traditional-village__title {
+    font-size: 3.4rem;
+  }
+  .traditional-village__line {
+    width: 120px;
+  }
+  .traditional-village__description {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  .traditional-village-slider-list {
+    overflow: auto;
+    /* overflow: hidden; */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+
+  .traditional-village-slider-list::-webkit-scrollbar {
+      display: none;
+  }
+  .btn-prev,
+  .btn-next {
+    display: none;
+  }
+
+  /* Cuisine */
+  .cuisine-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cuisine-intro-explore {
+    font-size: 3.2rem;
+  }
+  .cuisine-intro-title {
+    font-size: 3.3rem;
+  }
+  .cuisine-intro-des {
+    font-size: 1.9rem;
+    margin: 15px auto 20px;
+    text-align: center;
+  }
+  .cuisine-card-lists {
+    justify-content: center;
+    margin-top: 18px;
+  }
+  .cuisine-card-item {
+    width: 230px;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .cuisine-card-item-image {
+    height: 150px;
+  }
+
+  /* Art */
+  .art-intro-explore {
+    font-size: 3.3rem;
+  }
+  .art-intro-title {
+    font-size: 3.5rem;
+  }
+  .art-intro-des {
+    font-size: 2rem;
+  }
+  .art-card-list {
+    justify-content: center;
+  }
+  .art-card-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .art-calendar {
+    padding-bottom: 30px;
+  }
+  .art-calendar-title {
+    font-size: 2.6rem;
+  }
+  .art-calendar-des {
+    font-size: 1.7rem;
+  }
+  .art-calender-table th,
+  .art-calender-table td {
+    font-size: 1.6rem;
+  }
+  .art-feedback {
+    justify-content: center;
+  }
+  .art-feedback-card {
+    margin-bottom: 20px;
+  }
+
+  /* Travel */
+  #travel-top {
+    padding-bottom: 40px;
+  }
+  .travel-top-heading {
+    font-size: 3.2rem;
+  }
+  .travel-top-title {
+    font-size: 3.3rem;
+  }
+  .travel-top-gallery-grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 220px;
+  }
+  .item1, .item2, .item3, .item4, .item5, .item6 {
+      grid-column: auto / span 1 !important;
+      grid-row: auto / span 1 !important;
+  }
+
+  /* Event */
+  #event {
+    padding-bottom: 40px;
+  }
+  .event-heading-title {
+    font-size: 3.2rem;
+  }
+  .event-filters {
+    margin-top: 34px;
+  }
+  .event-card-lists {
+    justify-content: center;
+  }
+  .event-card-item {
+    margin: 0 10px 25px;
+  }
+  .event-pagination {
+    margin-top: 25px;
+  }
+
+  /* Footer */
+  .footer-wrap {
+    width: 720px;
+  }
+  .footer-organization {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .footer-about {
+    width: 40%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .footer-contact {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+  .footer-register {
+    margin-bottom: 30px;
+    width: 40%;
+  }
+  .footer-contact-name {
+    width: 285px;
+  }
+
+  /* Buy-ticket-form */
+  .buy-ticket-model {
+    width: 410px;
+  }
+  .buy-ticket-banner {
+    display: none;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 767px) { 
+  .container {
+    width: 100%;
+  }
+
+  /* Header */
+  #header {
+    height: 45px;
+  }
+  .header-wrap {
+    position: relative;
+    padding-left: 8px;
+    padding-right: 14px;
+  }
+  .header-wrap .logo {
+    width: 32px;
+    height: 32px;
+  }
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    min-height: 45px;
+    animation: slide .2s ease;
+  }
+  .navbar-list {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-item {
+    width: 100%;
+    height: 38px;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #eeecee;
+  }
+  .navbar-item + .navbar-item {
+    margin-left: 0;
+  }
+  .navbar-item:hover {
+    background-color: #e8e7e7;
+  }
+  .navbar-item-link {
+    display: block;
+    width: 100%;
+    line-height: 38px;
+    margin-left: 10px;
+    font-size: 1.4rem;
+  }
+  .header-icon-bar-mobile {
+    display: block;
+  }
+  .header-icon-bar-mobile:active .navbar {
+    display: block;
+  }
+
+  /* Banner */
+  #banner {
+    height: 600px;
+  }
+  .banner-text {
+    top: 220px;
+    left: 20px;
+    right: 20px;
+  }
+  .banner-text-heading {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .banner-text-title {
+    font-size: 2rem;
+    margin-top: 15px;
+  }
+  .banner-text-des {
+    font-size: 1.5rem;
+    margin-top: 18px;
+  }
+  .banner-btn-discovery {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 12px;
+    margin-top: 25px;
+  }
+  .banner-btn-discovery i {
+    margin-left: 5px;
+    font-weight: 600;
+  } 
+  .banner-map {
+    right: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  /* Introduction */
+  .introduction-wrap {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .introduction-image {
+    width: 70%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  .introduction-content {
+    width: 100%;
+  }
+
+  .introduction-title {
+    font-size: 2.7rem;
+  }
+
+  .introduction-des {
+    font-size: 2rem;
+    margin-top: 16px;
+  }
+
+  /* Traditional-village */
+  #traditional-village {
+    height: 620;
+  }
+  .traditional-village__title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 30px;
+    padding-top: 42px;
+    padding-bottom: 10px;
+  }
+  .traditional-village__line {
+    width: 120px;
+  }
+  .traditional-village__description {
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .traditional-village-slider {
+    padding: 0 20px;
+    margin-top: 0;
+  }
+  .traditional-village-slider-list {
+    overflow: auto;
+    /* overflow: hidden; */
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+
+  .traditional-village-slider-list::-webkit-scrollbar {
+      display: none;
+  }
+  .btn-prev,
+  .btn-next {
+    display: none;
+  }
+
+  /* Cuisine */
+  .cuisine-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cuisine-intro-explore {
+    font-size: 2.8rem;
+  }
+  .cuisine-intro-title {
+    font-size: 3rem;
+  }
+  .cuisine-intro-des {
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 15px auto 20px;
+    text-align: center;
+  }
+  .cuisine-card-lists {
+    justify-content: center;
+    margin-top: 18px;
+  }
+  .cuisine-card-item {
+    width: 230px;
+    height: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .cuisine-card-item-image {
+    height: 140px;
+  }
+  
+  /* Art */
+  .art-intro-explore {
+    font-size: 3.1rem;
+  }
+  .art-intro-title {
+    font-size: 3.2rem;
+  }
+  .art-intro-des {
+    font-size: 1.7rem;
+    width: 90%;
+  }
+  .art-card-list {
+    justify-content: center;
+  }
+  .art-card-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .art-calendar {
+    padding: 0 10px 30px;
+  }
+  .art-calendar-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .art-calendar-des {
+    font-size: 1.5rem;
+  }
+  .art-calender-table th,
+  .art-calender-table td {
+    font-size: 1.6rem;
+  }
+  .art-feedback {
+    justify-content: center;
+  }
+  .art-feedback-card {
+    width: auto;
+    height: 110px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .art-feedback-avatar {
+    display: none;
+  }
+
+  /* Travel */
+  #travel-top {
+    padding-bottom: 40px;
+  }
+  .travel-top-heading {
+    font-size: 3rem;
+  }
+  .travel-top-title {
+    font-size: 3.1rem;
+  }
+  .travel-top-gallery-grid-container {
+    padding: 0 15px;
+      grid-template-columns: 1fr;
+      grid-auto-rows: 200px;
+  }
+  .item1, .item2, .item3, .item4, .item5, .item6 {
+      grid-column: auto !important;
+      grid-row: auto !important;
+  }
+
+  /* Event */
+  #event {
+    padding-bottom: 40px;
+  }
+  .event-heading-title {
+    font-size: 3.1rem;
+  }
+  .event-filters {
+    margin-top: 34px;
+  }
+  .event-card-lists {
+    justify-content: center;
+  }
+  .event-card-item {
+    margin: 0 10px 25px;
+  }
+  .event-pagination {
+    margin-top: 20px;
+  }
+
+  /* Footer */
+  .footer-wrap {
+    width: 100%;
+    padding: 37px 30px 0;
+  }
+  .footer-organization {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .footer-about {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .footer-contact {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .footer-register {
+    margin-bottom: 70px;
+    width: 100%;
+  }
+
+  /* Buy-ticket-form */
+  .buy-ticket-model {
+    width: 410px;
+  }
+  .buy-ticket-banner {
+    display: none;
+  }
+
+}
+
+/* Responsive Footer */
+@media (min-width: 1081px) and (max-width: 1270px) {
+  .footer-wrap {
+    width: 1060px;
+  }
+  .footer-organization {
+    width: 245px;
+    margin-right: 0;
+  }
+  .footer-about {
+    width: 200px;
+    margin-right: 0;
+  }
+  .footer-contact {
+    margin-right: 0;
+  }
+  .footer-contact-card {
+    width: 338px;
+  }
+  .footer-contact-name {
+    width: 285px;
+  }
 
 }
 

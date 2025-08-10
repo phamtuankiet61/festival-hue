@@ -141,3 +141,46 @@ btnBackToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+
+
+// Xử lý btnBar header
+// Xử lý slider-list cho traditional-village tablet & mobile
+const allTraditionalVillageSliderItems = document.querySelectorAll('.traditional-village-slider-item');
+const btnBar = document.querySelector('.header-icon-bar-mobile');
+const navBar = document.querySelector('.navbar');
+        
+window.addEventListener('resize', function () {
+    const width = window.innerWidth;
+    if(width === 768 || width === 1252 || width === 1082) {
+        location.reload()
+    }
+
+    if(width < 768) {
+        btnBar.onclick = () => {
+            if(navBar.style.display === 'none' || navBar.style.display === '') {
+                navBar.style.display = 'block';
+            } else {
+                navBar.style.display = 'none';
+            }
+        }
+        navBar.onclick = () => {
+            navBar.style.display = 'none';
+        }
+    }
+
+    if(width < 1081) {
+        allTraditionalVillageSliderItems.forEach(sliderItem => {
+            sliderItem.classList.add('active');
+
+
+            // Logic Traditional-village tablet & mobile
+            sliderItem.querySelector('.pull-up').classList.remove('d-none');
+            sliderItem.querySelector('.overlay-content').classList.remove('d-none');
+        })
+
+    }
+});
+
+
+
+
